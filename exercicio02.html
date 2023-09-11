@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!--/* Isso declara que o documento é um HTML5 */-->
+<html lang="pt-br"> <!-- /* Define a linguagem da página  */-->
+<head> <!--/* Esta é a seção do cabeçalho do documento */-->
+    <meta charset="UTF-8"> <!--/* Define a codificação de caracteres, suporta caracteres especiais */-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 02 Formulário</title> <!--/* Define o título da página */-->
+        <style>
+          .borda  {        <!--/*é definida para adicionar bordas a alguns elementos do formulário */--> 
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin: 15px;
+            }
+            
+         </style>
+</head>
+<body>
+    <h1>Formulário de Dados Pessoais</h1> <!--/* Define um cabeçalho de nível 1 que exibe o título da página. */-->
+    <form> <!--/* Abre o formulário */-->
+        <fieldset class="borda"> <!--/* Cria um grupo de campos relacionados e recebe a classe */-->
+            <legend>Dados Pessoais</legend> <!--/* Define um título para o grupo de campos, neste caso, "Dados Pessoais" */-->
+        <div> <!--/* Agrupa os campos de "Nome" e "Sobrenome" em uma única linha */-->
+            <label for="nome">Nome</label> <!--/* label: Rótulos descritivos para os campos */-->
+            <input type="text" id="nome" name="nome" required> 
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+        </div> 
+           <br>
+        <div>
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" id="Nascimento" name="Nascimento" required><br>
+            <br>
+            <label for="rg">RG:  </label>
+            <input type="text" id="rg"   name="rg" required><br>
+            <br>
+            <label for="cpf">CPF:  </label>
+            <input type="text" id="cpf" name="cpf" required>
+        </div>
+        </fieldset>
+        <br>
+
+        <fieldset class="borda">
+            <legend>Dados de Endereço</legend>
+        <div>      
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required><br>
+        </div>
+        <br>
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br>
+            <br>
+            <label for="estado">Estado:</label>
+           <select id="estado" nome="estado" required><br>
+                <option value="" disabled selected>Selecione um estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+           </select>
+        </div>
+        <br>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
+            <br>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required style="width: 80px;"> -
+            <input type="text" id="cep2" name="cep2" required style="width: 50px;"><br>
+        </div>        
+        </fieldset>
+        <br>
+        <fieldset class="borda">
+            <legend>Dados de Login</legend>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <br>
+            <div>
+                <label for="imagem">Imagem de Perfil:</label>
+                <input type="file" id="imagem" name="imagem">
+            </div>
+            <br>
+            <div>
+                <label for="login">Login de Usuário:</label>
+                <input type="text" id="login" name="login" required><br>
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br>
+            </div>
+            <br>
+            <div>
+                <label for="confirmar-senha">Confirme a Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required><br>
+            </div>
+            <br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
