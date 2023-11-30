@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcccc; /* Cor de fundo pastel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #fff; /* Cor do conteúdo da calculadora */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff0000; /* Cor do texto vermelho */
+    border: #333;
+    border-radius: 5rem;
+    text-shadow: 0 0 10px rgba(255, 110, 223, 0.8), 0 0 20px rgba(255, 110, 223, 0.8), 0 0 30px rgba(255, 110, 223, 0.8);
+}
+
+.display {
+    margin-bottom: 10px;
+}
+
+#result {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #ff0000; /* Borda vermelha */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra vermelha */
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #ffcccc; /* Cor de fundo pastel dos botões */
+    color: #333; /* Texto escuro para contraste */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd; /* Efeito de hover em tom pastel mais claro */
+}
+
+.operator {
+    background-color: #880437; /* Cor do botão de operador */
+    color: #fff; /* Texto branco para contraste */
+    font-weight: bold; /* Alto relevo */
+    border: 1px solid #880437; /* Borda mais escura */
+}
+
+.equal {
+    background-color: #ff0000; /* Cor do botão de igual */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra vermelha */
+    font-weight: bold; /* Alto relevo */
+    border: 1px solid #cc0000; /* Borda mais escura */
+    color: #fff; /* Texto branco para contraste */
+}
